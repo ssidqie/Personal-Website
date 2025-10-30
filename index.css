@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(20, 20, 20);
+    margin: 0;
+    padding: 20px;
+}
+
+.navigation {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(255, 215, 83);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-left: 80px;
+}
+
+.logo:hover {
+    color: rgb(255, 255, 200);
+}
+
+.logo:active {
+    color: rgb(255, 255, 240);
+}
+
+.menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3c4a57;
+    padding: 8px 0;
+    transition: all 300ms;
+}
+
+.menu ul li a:hover {
+    color: rgb(255, 255, 251);
+    border-bottom: 4px solid rgb(255, 215, 83);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+    gap: 60px;
+    color: white;
+    text-align: left;
+}
+
+.hero-content h4 {
+    font-size: 1.2rem;
+    color: #d7d728;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #f7f7f4;
+    margin: 0;
+}
+
+.hero-content h5 {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.hero img {
+    width: 400px;
+    border-radius: 50%;
+    border: 4px solid rgb(255, 215, 83);
+    box-shadow: 0 0 25px rgb(254, 232, 33);
+    height: 400px;
+}
+
+#typed-container {
+    position: relative;
+    font-size: 1.5rem;
+    color: rgb(255, 238, 181);
+    font-weight: 600;
+    margin: 10px 0;
+    height: 1.5em;
+}
+
+#typed-text {
+    display: inline;
+    background-image: linear-gradient(to left, rgb(252, 219, 109), white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(255, 255, 255);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}

@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(20, 20, 20);
+    margin: 0;
+    padding: 20px;
+    background-image: 
+        radial-gradient(circle at 50% 50%),
+            rgba(20, 255, 100, 0.1) 0%,
+            rgba(0, 0, 0, 0) 100%,
+        linear-gradient(135deg, #000000 0%, #0a0a2e 100%);
+}
+
+.navigation {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(255, 215, 83);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-left: 80px;
+}
+
+.logo:hover {
+    color: rgb(255, 255, 200);
+}
+
+.logo:active {
+    color: rgb(255, 255, 240);
+}
+
+.menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3c4a57;
+    padding: 8px 0;
+    transition: all 300ms;
+}
+
+.menu ul li a:hover {
+    color: rgb(255, 255, 251);
+    border-bottom: 4px solid rgb(255, 215, 83);
+}
+
+#contact {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #292828 0%, #d5d4cc 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(216, 216, 216, 0.368);
+    color: white;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-shadow: 0 2px 4px rgba(255, 250, 250, 0.3);
+}
+
+#contact h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1em;
+    text-shadow: 0 2px 4px rgba(255, 250, 250, 0.3);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transform: scale(1.02);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #2d2d2c 0%, #696968 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(156, 156, 156, 0.4);
+}
+
+.submit-btn:hover {
+    background: #52514e;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(146, 146, 146, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0,1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .name {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #000000;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0,1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68. -0.55, 0.265, 1.55);
+}
+.wrapper .name::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .name {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .name {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0,1);
+}
+
+.tiktok-icon{
+    font-size:50px;
+    color: #000000;
+}
+
+.whatsapp-icon{
+    font-size: 50px;
+    color: green;
+}
+
+.instagram-icon{
+    font-size: 50px;
+    color: #e4405f;
+}
+
+.text-sosial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 208, 21);
+}
